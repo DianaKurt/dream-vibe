@@ -1,4 +1,5 @@
 import postcssPxToRem from 'postcss-pxtorem'
+import postcssPresetEnv from 'postcss-preset-env'
 
 export default ({ env }) => {
   const isProd = env === 'production'
@@ -7,11 +8,16 @@ export default ({ env }) => {
   if (isProd) {
     plugins.push(
       postcssPxToRem({
-        prodList: ['*'],
+        propList: ['*'],
         mediaQuery: true,
       })
     )
+
+    plugins.push(
+      postcssPresetEnv()
+    )
   }
+
   return {
     plugins,
   }
