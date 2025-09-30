@@ -1,1 +1,1 @@
-# sream-vibe
+# stream-vibe
