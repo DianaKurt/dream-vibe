@@ -13,19 +13,19 @@ const Header = (props) => {
   const menuItems = [
     {
       label: 'Home',
-      href: '/',
+      href: '/stream-vibe/index.html',
     },
     {
       label: 'Movies & Shows',
-      href: '/movies',
+      href: '/stream-vibe/movies.html',
     },
     {
       label: 'Support',
-      href: '/support',
+      href: '/stream-vibe/support.html',
     },
     {
       label: 'Subscriptions',
-      href: '/subscriptions',
+      href: '/stream-vibe/subscriptions.html',
     },
   ]
 

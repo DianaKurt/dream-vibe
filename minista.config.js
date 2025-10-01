@@ -1,9 +1,9 @@
 import { defineConfig } from 'minista'
 import path from 'path'
-
+const repoName = 'stream-vibe'
 export default defineConfig({
   root: '',
-  base: '/dream-vibe/',
+  base: process.env.NODE_ENV === 'production' ? `/${repoName}/` : './',
   public: 'public',
   out: 'dist',
   assets: {
